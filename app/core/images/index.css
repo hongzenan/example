@@ -1,0 +1,71 @@
+.logo {
+    background: url(./logo.png) no-repeat;
+    background-size:cover;
+    width: 55px;
+    height: 30px;
+    margin-top: -7px;
+}
+
+.login {
+    background: url(./face.png) no-repeat;
+    background-size:cover;
+    width: 50px;
+    height: 40px;
+    margin-top: -10px;
+
+}
+
+.banner {
+    background: url(./banner.jpg) no-repeat;
+    height: 350px;
+
+}
+
+.knowledge {
+    background: url(./Knowledge.png) no-repeat;
+    height: 200px;
+}
+
+.mycase {
+    background: url(./Mycase.png) no-repeat;
+    height: 200px;
+}
+
+.learn {
+    background: url(./learn.png) no-repeat;
+    height: 200px;
+}
+
+.downloads {
+    background: url(./Downloads.png) no-repeat;
+    height: 200px;
+}
+
+.downloads {
+    background: url(./Downloads.png) no-repeat;
+    height: 200px;
+}
+
+.manage {
+    background: url(./Manage.png) no-repeat;
+    height: 200px;
+
+}
+
+.where {
+    background: url(./where.png) no-repeat;
+    height: 200px;
+
+}
+
+.newspark {
+    background: url(./newspark.png) no-repeat;
+    height: 200px;
+
+}
+
+.reset {
+    background: url(./reset.png) no-repeat;
+    height: 200px;
+
+}

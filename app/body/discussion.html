@@ -1,0 +1,140 @@
+
+<div class="carousel row tab-pane fade in producttypeslide bottomBorder" id="product">
+    <ul>
+        <h4 class="leftPadding160"><a href="index.html">Home</a><a href="#/index/result">>Search Result</a><span>>Detail</span></h4>
+    </ul>
+</div>
+
+<div class="container">
+    <div class="col-md-8 rightBorder">
+        <!--text here-->
+        <br/>
+
+        <div ng-repeat="x in message|filter:id">
+        
+            <br/>
+            <br/>
+
+            <div>
+					<h2 style="color:#3399FF">{{ x.title }}</h2>
+				</div>
+				<br/>
+				<p style="font-size:20px;color:#000000;">
+					{{ x.hitFragment }}
+				</p>
+				<br/>
+            <!--body begin-->
+            <ul class="nav nav-tabs">
+                <li  ><a data-toggle="#tab" ui-sref="index.result.text({type:id})">Text</a></li>
+                <li ><a data-toggle="tab" ui-sref="index.result.video">Videos</a></li>
+                <li class="active"><a data-toggle="tab" ui-sref="index.result.dicussion">Discussion</a></li>
+            </ul>
+            <!--tab begin-->
+            <div class="tab-content"  style="font-size:20px;">
+                <div id="Text" class="tab-pane fade in active">
+                    <br/>
+                    <br/>
+                 
+                    <div ng-bind-html="x.content"></div>
+                    <br/>
+                    <br/>
+                    <br/>
+                   
+                    <br/>
+                    <br/>
+                    <br/>
+            
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </div>
+             
+              
+            </div>
+         
+             </br>
+			
+            <div class="inline topBorder">
+                <span class="label label-default">Content Sharing</span>
+                &nbsp;&nbsp;
+                <span class="label label-default">Meet</span>
+                &nbsp;&nbsp;
+                <span class="label label-default">Windows</span>
+                &nbsp;&nbsp;
+					  <span class="label label-default">User</span>
+					  &nbsp;&nbsp;
+					  <label style="float:right">1803 views</label>
+            </div>
+        </br>
+        </div>
+    </div>
+    <div class="col-md-4 leftBorder">
+     
+        <div class="leftPadding bottomBorder">
+            <br/>
+            <br/>
+            <h4>Was it helpful?<a href="#"><span class="glyphicon glyphicon-zoom-in"></span></a>
+                <a href="#"><span class="glyphicon glyphicon-zoom-out"></span></a>
+            </h4>
+            <br/>
+        </div>
+  
+        <div class="leftPadding bottomBorder">
+            <br/>
+            <h4>Languages</h4>
+
+            <p>This article is available in:</p>
+
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">English(US)<span
+                        class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Chinese</a></li>
+                    <li><a href="#">Japanese</a></li>
+                </ul>
+            </div>
+            <br/>
+        </div>
+        <!--Related-->
+        <div class="leftPadding bottomBorder">
+            <h4>Related Articles</h4>
+
+            <p>Add or Update Your Profile Photo</p>
+
+            <p>Find the Setting for the Cisco Spark...</p>
+
+            <p>Collaboration Management for Partners</p>
+
+            <p>Jabber call not working</p>
+
+            <p>Spark app for Blackberry</p>
+            <button type="button" class="btn btn-link">More ></button>
+        </div>
+        <!--Recently-->
+        <div class="leftPadding">
+            <h4>Recently Viewed</h4>
+
+            <p>Add or Update Your Profile Photo</p>
+
+            <p>Find the Setting for the Cisco Spark</p>
+
+            <p>Collaboration Management for Partners</p>
+
+            <p>Jabber call not working</p>
+
+            <p>Spark app for Blackberry</p>
+            <button type="button" class="btn btn-link">More ></button>
+        </div>
+    </div>
+</div>
+
+<div  class=" col-md-12" style="background-color:#CCCCCC;border-bottom:solid 1px black";>
+<h1 style="margin-top:100px" align ="center">Still can't find what you are looking for?</h1>
+<button style="margin-top:130px;margin-bottom:30px" type="button"  class="btn btn-danger col-md-offset-5">Contact Support</button>
+</div>
+<!-- footer-->
+<div class="col-md-12" style="background-color:#CCCCCC";>
+<p class="text-center">Copyright &copy; 2016.Cisco All rights reserved.</p>
+</div>

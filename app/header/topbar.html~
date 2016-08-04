@@ -1,0 +1,69 @@
+<nav class="navbar navbar-default navbar-fixed-top " role="navigation" style="font-color:black">
+		<div class="container" >
+			<div class="navbar-header">
+				<a class="navbar-brand brand-img " href="#" >
+					<img style="width: 55px; height:30px;" src="core/images/logo.png"></a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">HELP CENTRAL</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">HELP CENTRAL</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li  >
+						<a href="">ACCOUNT MANAGEMENT</a>
+					</li>
+					<li>
+						<a href="">SERVICE STATUS</a>
+					</li>
+					<li>
+						<a href="">DEVELOPERS</a>
+					</li>
+					<li>
+						<a class="navbar-brand brand-img " href="#" >
+							<img   style="width: 40px; height:30px;" src="core/images/face.png"></a>
+					</li>
+					<li>
+						<a href="">hi Jacky</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--nav end-->
+	<!--banner begin-->
+	<div  id="banner" class="banner" style=" height:350px; background:url(core/images/banner.jpg)">
+		<div class="banner-image"></div>
+		<div class="banner-caption">
+			<div class="container">
+				<div  class="caption-data col-md-offset-3" style="margin-top: 150px; opacity: 1;" >
+					<h2 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;How can we help,Jacky?</h2>
+					<form role="form" class="form-inline" ng-submit="subFunc()">
+						<div class="form-group ">
+							<select class="combobox" style="height:45px">
+								<option value="SA" selected="selected">Search All</option>
+								<option value="CA">Call</option>
+								<option value="MT">Meet</option>
+								<option value="MS">Message</option>
+							</select>
+							 <input  type="text" ng-model="search"  required="true"  ng-change="changeFun()"  style="width:440px;height:50px;" class="form-control" id="name" placeholder="For example:'How to share my screen'or'Bad audio quality'">
+							<button type="submit" ng-click="addUserType()"  class="btn btn-danger" style="height: 45px">Search</button> 
+						
+			
+		
+				<!-- <form role="form" ng-submit="subFunc()">	
+				<input   type="text" class="from-control col-md-10 " id="keyword" placeholder="请输入要搜索的关键字"  style="height:38px" ng-model="search" required="true" ng-change="changeFun()"/>	
+				<button type="submit" class="btn btn-default col-md-2">Search</button>
+				</from>
+				<div style="height:96px"></div> -->
+		
+		
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>

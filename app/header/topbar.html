@@ -1,0 +1,87 @@
+<nav class="navbar navbar-default navbar-fixed-top " role="navigation" style="font-color:black">
+	<div class="container" >
+		<div class="navbar-header">
+			<a class="navbar-brand brand-img " href="#" >
+				<div class="logo"></div>
+				<!-- <img style="width: 55px; height:30px;" src="images/logo.png"> -->
+			</a>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">HELP CENTRAL</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">HELP CENTRAL</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li  >
+					<a href="">ACCOUNT MANAGEMENT</a>
+				</li>
+				<li>
+					<a href="">SERVICE STATUS</a>
+				</li>
+				<li>
+					<a href="">DEVELOPERS</a>
+				</li>
+				<li>
+					<a class="navbar-brand brand-img " href="#" >
+						 <div class="login"></div>
+<!--						<img   style="width: 40px; height:30px;" src="images/face.png"></a>-->
+				</li>
+				<li>
+					<a href="">hi Jacky</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<!--nav end-->
+<!--banner begin-->
+<!--<div  id="banner" class="banner" style=" height:350px; background:url(images/banner.jpg)">-->
+	 <div id="banner" class="banner">
+	<div class="banner-image"></div>
+	<div class="banner-caption">
+		<div class="container">
+			<div  class="caption-data col-md-offset-3" style="margin-top: 150px; opacity: 1;" >
+				<h2 >
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;How can we help,Jack?
+				</h2>
+				<form role="form" class="form-inline" ng-submit="subFunc()">
+					<div class="form-group " >
+						<!-- <select class="combobox" style="height:50px;margin:-2px; line-height:50px;backgro">
+						<option value="SA" selected="selected">Search All</option>
+						<option value="CA">Call</option>
+						<option value="MT">Meet</option>
+						<option value="MS">Message</option>
+					</select>
+					-->
+						<!-- Single button -->
+
+						<div class="dropdown"  >
+							<button class="btn  dropdown-toggle"  style="height:50px;margin:-2px;" type="button" data-toggle="dropdown">
+								Search All
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Call</a>
+								</li>
+								<li>
+									<a href="#">Meet</a>
+								</li>
+								<li>
+									<a href="#">Message</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<input  type="text" ng-model="search"  required="true" style="width:440px;height:50px;margin:-2px;" class="form-control" id="name" placeholder="For example:'How to share my screen'or'Bad audio quality'">
+					<button type="submit" ng-click="addUserType()"  class="btn btn-danger" style="height: 50px;margin:-2px">Search</button>
+			</div>
+			</form>
+		</div>
+	</div>
+</div>
+</div>

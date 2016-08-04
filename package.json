@@ -1,0 +1,30 @@
+{
+  "name": "espclient",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bundle.js",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "babel-loader": "^6.2.4",
+    "bootstrap": "^3.3.7",
+    "css-loader": "^0.23.1",
+    "ng-annotate-loader": "^0.1.1",
+    "raw": "^0.1.4",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "devDependencies": {
+    "babel-preset-react-hmre": "^1.1.1",
+    "copy-webpack-plugin": "^3.0.1",
+    "url-loader": "^0.5.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --progress --inline --hot"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,151 @@
+<div class="container col-md-12 "  style="height: 50px; border-bottom:solid 1px gray";>
+        <div class="col-md-6  col-md-offset-1" style="margin-top:10px;">
+            <p> <font size="4" ><a href="index.html">Home></a>
+                 <Strong>Search Result</Strong>
+            </p>
+        </div>
+        <div class="col-md-2  col-md-offset-3" style="margin-top:10px;">
+            <Strong>sort by</Strong>
+            &nbsp;
+            <select class="combobox" >
+                <option value="PA" selected="selected">Relevance</option>
+                <option value="CT">Call</option>
+                <option value="NY">Meet</option>
+                <option value="MD">Message</option>
+            </select>
+        </div>
+    </div>
+    <!-- left body-->
+    <div class="container col-md-12">
+        <div class=" col-md-3 col-md-offset-1" ;>
+            <h2>TOPIC</h2>
+            <div class="checkbox">
+                <label><input type="checkbox" value="" checked="checked">Getting Started(10)</label>
+            </div>
+            <div class="checkbox ">
+                <label><input type="checkbox" value="" checked="checked">What's New</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" value="" checked="checked">Install and Set Up(18)</label>
+            </div>
+            <div class="checkbox ">
+                <label><input type="checkbox" value="" checked="checked"checked="checked">Call and Meetings(20)</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" value="" checked="checked">Messaging(9)</label>
+            </div>
+            <div class="checkbox ">
+                <label><input type="checkbox" value="" checked="checked">Content Sharing(15)</label>
+            </div>
+            <div class="checkbox ">
+                <label><input type="checkbox" value="" checked="checked">Phones and Accesories(7)</label>
+            </div>
+            <div class="checkbox ">
+                <label><input type="checkbox" value="" checked="checked">Intergration(8)</label>
+            </div>
+            <div class="checkbox ">
+                <label><input type="checkbox" value="" checked="checked">Setting and Customizations(11)</label>
+            </div>
+            <div class="checkbox ">
+                <label><input type="checkbox" value="" checked="checked">Know and Resolved Issues(10)</label>
+            </div>
+            <div class="checkbox ">
+                <label><input type="checkbox" value="" checked="checked">Troubleshooting and Support(5)</label>
+            </div>
+            <h2>SERVICE</h2>
+            <div class="checkbox">
+                <label><input type="checkbox" value="" checked="checked">Meet(10)</label>
+            </div>
+            <div class="checkbox ">
+                <label><input type="checkbox" value="" checked="checked">Message(9)</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" value="" checked="checked">Call(5)</label>
+            </div>
+            <h2>CLIENT TYPE</h2>
+            <div class="checkbox ">
+                <label><input type="checkbox" value="" checked="checked">Windows(20)</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" value="" checked="checked">Mac(10)</label>
+            </div>
+            <h2>ROLE</h2>
+            <div class="checkbox ">
+                <label><input type="checkbox" value="" checked="checked">User(15)</label>
+            </div>
+            <div class="checkbox ">
+                <label><input type="checkbox" value="" checked="checked">Admin</label>
+            </div>
+            <h2>ARTICLE CONTENT</h2>
+            <div class="checkbox ">
+                <label><input type="checkbox" value="" checked="checked">Text(15)</label>
+            </div>
+            <div class="checkbox ">
+                <label><input type="checkbox" value="" checked="checked">Video(11)</label>
+            </div>
+            <div class="checkbox ">
+                <label><input type="checkbox" value="" checked="checked">Discussion(15)</label>
+            </div>
+        </div>
+        <!-- left body-->
+        <!-- right body-->
+        <div class="col-md-8">
+
+
+            <ul class="list-group ">
+                <li  class="list-group-item "ng-repeat="info in message" >
+                    <span class="badge">hot</span>
+                    <h2 style="color:#3399FF" ><a   ui-sref="index.result.text({ type:info.title })" style='text-decoration:none;' >{{ info.title }}</a></h2>
+                </br>
+                {{ info.hitFragment }}
+                </br>
+            </br>
+            <div class="inline">
+                <span class="label label-default">App Feature</span>
+                &nbsp;&nbsp;
+                <span class="label label-default">Content Sharing</span>
+                &nbsp;&nbsp;
+                <span class="label label-default">Windows</span>
+                &nbsp;&nbsp;
+            <span class="label label-default">Meet</span>
+                &nbsp;&nbsp;
+            <span class="label label-default">User</span>
+            </div>
+        </br>
+        <div class="inline" style="border-top:solid 1px #BACAC6;">
+            <p style="margin-top:20px">
+                299 people think this is helpfull! &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                <label style="float:right">1803 views</label>
+            </p>
+        </div>
+    </li>
+</ul>
+<nav>
+<ul class="pagination">
+<li>
+<a ng-click="Previous()">
+上一页
+</a>
+</li>
+<li ng-repeat="page in pageList" ng-class="{active: isActivePage(page)}" >
+<a ng-click="selectPage(page)" >{{ page }}</a>
+</li>
+<li>
+<a ng-click="Next()">
+下一页
+</a>
+</li>
+</ul>
+</nav>
+</div>
+<!-- right body-->
+<div  class=" col-md-12" style="background-color:#CCCCCC;border-bottom:solid 1px black";>
+<h1 style="margin-top:100px" align ="center">Still can't find what you are looking for?</h1>
+<button style="margin-top:130px;margin-bottom:30px" type="button"  class="btn btn-danger col-md-offset-5">Contact Support</button>
+</div>
+<!-- footer-->
+<div class="col-md-12" style="background-color:#CCCCCC";>
+<p class="text-center">Copyright &copy; 2016.Cisco All rights reserved.</p>
+</div>
+<!-- footer end -->
+    
